@@ -1,0 +1,15 @@
+# 2. Stwórz funkcję, która będzie tworzyć wektor o zadanej długości.
+# Funkcja ma zwracać wektor liczb całkowitych od 1 do n:
+#  długość wektora wynosi n, a wartości w wektorze to sekwencja liczb od 1 do n.
+
+vector = function(n) {
+  A= 1:n
+  return(A)
+}
+
+# 3. Stwórz funkcję o nazwie pole_kola, która oblicza pole powierzchni koła dla danego promienia.
+pole_kola = function(r){
+  P = pi*(r^2)
+  return(P)
+}
+
