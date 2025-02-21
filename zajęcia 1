@@ -13,3 +13,27 @@ pole_kola = function(r){
   return(P)
 }
 
+# 7. Stwórz funkcję obliczającą podatek w zależności od dochodu. 
+# Przyjmij następujące założenia:
+# a) Jeżeli podatnik rozlicza się liniowo, wtedy niezależnie od kwoty płaci 19% podatku.
+# b) Jeżeli podatnik rozlicza się na zasadach ogólnych, wtedy:
+# - poniżej kwoty 85528zł płaci 18% podatku minus kwota zmniejszająca, czyli 556zł;
+# - powyżej kwoty 85528zł płaci 14839zł + 32% nadwyżki powyżej 85528zł.
+
+#L- podatek liniowy, O- podatek ogólny
+
+podatek = function(typ, kwota) {
+    if(typ == "L") {
+      podatek = kwota*0.19
+    } else if(typ=="O") {
+      if(kwota<= 85528) {
+        podatek = kwota* 0.18 - 556
+      } else if (kwota> 85528) {
+      podatek = 14839 + 0.32 * (kwota - 85528)
+    } 
+  }
+  return (podatek)
+}
+  
+  
+
