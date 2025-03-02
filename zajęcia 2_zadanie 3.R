@@ -50,3 +50,7 @@ wordcloud(frequent_terms$WORD, frequent_terms$FREQ, min.freq = 4, colors = brewe
 wordcloud(frequent_terms$WORD, frequent_terms$FREQ, max.words = 5, colors = brewer.pal(8,"Accent"))
 ?brewer.pal
 brewer.pal.info
+
+# Odp do zadania: Priorytety wykryte w obu przemówieniach różnią się, w przemówieniu z 2021 roku najczęsciej pojawiającym się słowem jest "american",
+# nieco rzadziej pojawiało się słowo "jobs", natomiast w przemówieniu z 2024 roku najczęściej pojawiało się słowo "president".
+
