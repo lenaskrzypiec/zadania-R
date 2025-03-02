@@ -4,7 +4,7 @@ text <- readLines(file.choose())
 text
 
 # Sprawdź częstości słów za pomocą pakietu qdap
-#install.packages("qdap")
+install.packages("qdap")
 library(qdap)
 
 frequent_terms <- freq_terms(text)
@@ -13,7 +13,7 @@ frequent_terms <- freq_terms(text, stopwords = Top200Words)
 plot(frequent_terms)
 
 # Tworzenie chmury słów za pomocą pakietu wordcloud
-#install.packages("wordcloud")
+install.packages("wordcloud")
 library(wordcloud)
 
 # Dodanie różnych palet kolorystycznych
